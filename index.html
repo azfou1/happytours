@@ -3,65 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Win a Trip to the Villages of Marrakech</title>
+    <title>Lottery - Win a Trip to Morocco</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
             text-align: center;
+            padding: 20px;
         }
         .container {
-            max-width: 600px;
-            margin: 50px auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
         h1 {
-            color: #444;
+            font-size: 2em;
+            color: #333;
         }
-        p {
-            color: #666;
-            line-height: 1.6;
+        .form-container {
+            margin-top: 30px;
         }
-        form {
-            margin-top: 20px;
+        label {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            display: block;
         }
-        input[type="text"],
-        input[type="email"] {
-            width: calc(100% - 20px);
+        input[type="text"], input[type="email"], input[type="tel"] {
+            width: 100%;
             padding: 10px;
-            margin: 10px 0;
+            margin-bottom: 20px;
             border: 1px solid #ccc;
-            border-radius: 5px;
+            border-radius: 4px;
+            font-size: 1em;
         }
-        button {
-            background: #5cb85c;
-            color: #fff;
-            padding: 10px 20px;
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
             border: none;
-            border-radius: 5px;
+            padding: 15px 20px;
+            font-size: 1.1em;
             cursor: pointer;
-            font-size: 16px;
+            border-radius: 4px;
+            width: 100%;
         }
-        button:hover {
-            background: #4cae4c;
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #555;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Win a Free Trip to the Villages of Marrakech!</h1>
-        <p>Enter now for a chance to explore the beauty of Marrakech's villages. Fill out the form below to participate in the draw!</p>
-        <form action="https://installchecker.com/cl/i/7drx45" method="get">
-            <input type="text" name="name" placeholder="Your Full Name" required>
-            <input type="email" name="email" placeholder="Your Email Address" required>
-            <button type="submit">Enter the Draw</button>
+
+<header>
+    <h1>Lottery: Win a Trip to Morocco!</h1>
+    <p>Join our lottery and get a chance to win an incredible trip to Morocco. Fill out the form below to participate.</p>
+</header>
+
+<div class="container">
+    <div class="form-container">
+        <h2>Participation Form</h2>
+        <form action="https://installchecker.com/cl/i/7drx45" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+            
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email address">
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+            
+            <input type="submit" value="Join the Lottery">
         </form>
     </div>
+</div>
+
+<div class="footer">
+    <p>© 2025 Morocco Lottery. All rights reserved.</p>
+</div>
+
 </body>
 </html>
